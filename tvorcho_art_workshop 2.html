@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт Работилничка Творчо</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffcc66;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff9933;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        .event-card, .gallery-card {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        .form-section input, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #ff9933;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Арт Работилничка "Творчо"</header>
+    
+    <nav>
+        <a href="#home">Начало</a>
+        <a href="#events">Събития и уроци</a>
+        <a href="#signup">Записване</a>
+        <a href="#gallery">Галерия</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Добре дошли в Арт Работилничка „Творчо“!</h2>
+        <p>Тук децата развиват своята креативност чрез изобразително изкуство и забавни събития.</p>
+    </section>
+    
+    <section id="events">
+        <h2>Предстоящи събития и уроци</h2>
+        <div class="event-card">
+            <h3>Урок по рисуване с акварел</h3>
+            <p>Дата: 15 януари 2025 г.</p>
+            <p>Време: 10:00 - 12:00 ч.</p>
+        </div>
+        <div class="event-card">
+            <h3>Творческа работилница „Зимни чудеса“</h3>
+            <p>Дата: 20 януари 2025 г.</p>
+            <p>Време: 14:00 - 16:00 ч.</p>
+        </div>
+    </section>
+    
+    <section id="signup">
+        <h2>Запишете детето си</h2>
+        <div class="form-section">
+            <form action="/submit" method="post">
+                <input type="text" name="child_name" placeholder="Име на детето" required>
+                <input type="text" name="parent_name" placeholder="Име на родителя" required>
+                <input type="tel" name="phone" placeholder="Телефон за контакт" required>
+                <textarea name="message" placeholder="Допълнителна информация"></textarea>
+                <button type="submit">Запиши се</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h2>Галерия</h2>
+        <div class="gallery-card">
+            <img src="sample1.jpg" alt="Рисунка на дете" width="100%">
+            <p>Творба на Мария, 8 г.</p>
+        </div>
+        <div class="gallery-card">
+            <img src="sample2.jpg" alt="Рисунка на дете" width="100%">
+            <p>Творба на Иван, 9 г.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Адрес: ул. „Изкуство“ 10, гр. София</p>
+        <p>Телефон: 0888 123 456</p>
+        <p>Email: tvorcho@example.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Арт Работилничка "Творчо". Всички права запазени.</p>
+    </footer>
+</body>
+</html>
